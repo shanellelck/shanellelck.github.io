@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --bg-color: white;
+  --typewriterSpeed: 4s;
+  --typewriterCharacters: 26;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: start center end;
+}
+
+.fullpage {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+.nav-bar {
+    width: 100%;
+    line-height: 40px;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.one {
+    padding-top: 1%;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(black 0.5px, white 0.5px);
+    background-size: 10px 10px;
+
+}
+.one img[src="slck.jpg"] {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.main-content {
+    padding-top: 5%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+.main-text {
+    display: block;
+    justify-content: space-between;
+}
+
+.main-content h2 {
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.dir-links {
+    padding-top: 10%;
+}
+
+
+.main-content a {
+    color: white;
+}
+
+/*
+.main-content a:hover {
+    color: darksalmon;
+}
+*/
+.main-content a:link {
+    text-decoration: none;
+}
+
+.main-content li {
+    width: fit-content;
+    border-radius: 25px;
+    padding: 10px;
+    list-style-type: none;
+    background-color: darksalmon;
+    color: white;
+    display: inline;
+    margin-right: 1%;
+}
+
+.main-content li:hover {
+    background-color:black;
+    color:darksalmon;
+    outline-color: black;
+}
+
+.left {
+    padding-left: 7%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+} 
+
+.left p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.right {
+    padding-right: 20%;
+    display: flex;
+}
+
+.right a {
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 0 35%;
+    text-decoration: none;
+    color: darksalmon;
+}
+
+.right a:hover {
+    color: white;
+    background-color: darksalmon;
+}
+
+.one img {
+    width: 55%;
+}
+
+.two {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(black 0.5px, white 0.5px);
+    background-size: 10px 10px;
+
+}
+
+.three {
+    padding-left: 10%;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(black 0.5px, white 0.5px);
+    background-size: 10px 10px;
+}
+
+.four {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(black 0.5px, white 0.5px);
+    background-size: 10px 10px;
+}
+
+h1 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: max-content;
+}
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.icons {
+    width: 100%;
+    padding-top: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 3%; 
+}
+
+.icons i {
+    color: darksalmon;
+}
+.icons a {
+    padding-top: 15%;
+}
+.icons a:link {
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+}
+
+.icons a:hover {
+    color: darksalmon;
+    background-color: cornsilk;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.proj {
+    background-color: darksalmon;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+}
+
+.projects a:link{
+    text-decoration: none;
+}
+
+.projects a {
+    color: white;
+}
+
+/* to delete the line .projects below related to p once second project is linked*/
+.projects {
+    color: white;
+}
+
+
+
+.proj:hover {
+    color: darksalmon;
+    border-color: darksalmon;
+    background-color: white;
+}
+
+
+
+.me-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 2em;
+    grid-gap: 2em;
+}
+
+
+
+
+
+/*
+.skills-column {
+    background-image: url("./paper.png");
+    background-repeat: no-repeat;
+}*/
+/* 
+.icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 12%;
+}
+
+.icons i {
+    padding: 0 %;
+}*/
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
