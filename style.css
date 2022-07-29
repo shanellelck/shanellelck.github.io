@@ -29,6 +29,7 @@ section {
     justify-content: space-between;
 }
 
+
 .one {
     padding-top: 1%;
     background-color: #e5e5f7;
@@ -97,15 +98,18 @@ section {
 .left {
     padding-left: 7%;
     position: relative;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
+
 } 
 
-.left p {
+.left span{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     vertical-align: middle;
+    float: left;
 }
+
 .right {
     padding-right: 20%;
     display: flex;
