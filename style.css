@@ -37,7 +37,7 @@ section {
     background-size: 10px 10px;
 
 }
-.one img[src="slck.jpg"] {
+.one img {
     width: 40px;
     height: 40px;
     vertical-align: middle;
