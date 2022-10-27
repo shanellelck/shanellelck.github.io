@@ -193,6 +193,36 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.skills {
+    height: 20vh;
+    display: block;
+}
+
+.skills h3 {
+    height: 50%;
+}
+
+.skills ul {
+    height: 50%;
+}
+
+.skills li {
+    width: fit-content;
+    border-radius: 25px;
+    padding: 10px;
+    list-style-type: none;
+    background-color: darksalmon;
+    color: white;
+    display: inline;
+    margin-right: 1%;
+}
+
+.skills li:hover {
+    background-color:black;
+    color:white;
+    outline-color: black;
+}
+
 
 .icons {
     width: 100%;
@@ -246,6 +276,11 @@ h2 {
     width: 300px;
 }
 
+.proj a {
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+}
+
 .projects a:link{
     text-decoration: none;
 }
@@ -259,21 +294,28 @@ h2 {
     color: white;
 }
 
-
+.proj h4 {
+    color: black;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .proj:hover {
     color: darksalmon;
     border-color: darksalmon;
     background-color: white;
+    color: darksalmon;
 }
 
 
 
-.me-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 2em;
-    grid-gap: 2em;
+.me {
+    display: block;
+}
+
+.me .about {
+    height: 20vh;
 }
 
 
